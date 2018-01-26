@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/server/index.js",
+    "start": "nodemon ./src/server/bin/www",
     "webpack": "./node_modules/.bin/webpack -w",
     "test": "mocha --compilers babel-core/register ./test/*test.js"
   },
@@ -14,7 +14,8 @@
   "dependencies": {
     "express": "^4.16.2",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "babel": "^6.23.0",
