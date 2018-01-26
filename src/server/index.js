@@ -1,3 +1,5 @@
+var bodyParser = require('body-parser');
+
 // Set up the express app
 var express = require('express');
 var app = express();
@@ -5,8 +7,9 @@ var app = express();
 /*
  * Initialisation de middleware
  */
-app.use(express.static(__dirname +'./../../')); //serves the index.html
-
+app.use(bodyParser.json()) // Parse des requêtes entrantes
+.use(bodyParser.urlencoded({ extended: true }))
+.use(express.static(__dirname +'./../../')); //serves the index.html
 
 /*
  * Set des routes

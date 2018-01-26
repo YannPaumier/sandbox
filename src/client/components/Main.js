@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom'
-import Home from './Home'
-import Schedule from './Schedule'
+import { Switch, Route } from 'react-router-dom';
+import Home from './Home';
+import Schedule from './Schedule';
+import Synchros from './Synchros';
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
@@ -14,6 +15,7 @@ class Main extends Component {
       <main>
         <Switch>
           <Route exact path='/' component={Home}/>
+          <Route path='/synchros' component={Synchros}/>
           <Route path='/schedule' component={Schedule}/>
         </Switch>
       </main>

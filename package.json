@@ -13,6 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
+    "file-loader": "^1.1.6",
+    "image-webpack-loader": "^4.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2"

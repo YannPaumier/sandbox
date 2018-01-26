@@ -33,6 +33,16 @@ const config = {
            presets: ['react', 'es2015'] // Transpiles JSX and ES6
          }
        }]
+     },
+     {
+       test: /.*\.(gif|png|jpe?g|svg)$/i,
+       use: [
+         {
+           loader: 'file-loader',
+           options: {
+           }
+         },
+       ]
      }
     ],
 
